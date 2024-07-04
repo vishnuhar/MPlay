@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradiant_backround"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <!-- ExoPlayerViews Section -->
+    <com.google.android.exoplayer2.ui.PlayerView
+        app:use_controller="false"
+        android:id="@+id/exoPlayerView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoPlayerView2"
+        app:use_controller="false"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/exoPlayerView1"
+        android:layout_margin="4dp" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoPlayerView3"
+        app:use_controller="false"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/exoPlayerView1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoPlayerView4"
+        app:use_controller="false"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/exoPlayerView2"
+        app:layout_constraintStart_toEndOf="@id/exoPlayerView3"
+        android:layout_margin="4dp" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoPlayerView5"
+        app:use_controller="false"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/exoPlayerView3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="4dp" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoPlayerView6"
+        app:use_controller="false"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/exoPlayerView4"
+        app:layout_constraintStart_toEndOf="@id/exoPlayerView5"
+        android:layout_margin="4dp" />
+
+    <!-- ImageViews Section -->
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/movie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/exoPlayerView2"
+        android:layout_margin="4dp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/movie"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image1"
+        android:layout_margin="4dp" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/movie"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        app:layout_constraintStart_toEndOf="@id/exoPlayerView4"
+        android:layout_margin="4dp" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/movie"
+        app:layout_constraintTop_toBottomOf="@id/image2"
+        app:layout_constraintStart_toEndOf="@id/image3"
+        android:layout_margin="4dp" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/movie"
+        app:layout_constraintTop_toBottomOf="@id/image3"
+        app:layout_constraintStart_toEndOf="@id/exoPlayerView6"
+        android:layout_margin="4dp" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/movie"
+        app:layout_constraintTop_toBottomOf="@id/image4"
+        app:layout_constraintStart_toEndOf="@id/image5"
+        android:layout_margin="4dp" />
+
+    <!-- WebViews Section -->
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image2"
+        android:layout_margin="4dp" />
+
+    <WebView
+        android:id="@+id/webView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/webView1"
+        android:layout_margin="4dp" />
+
+    <WebView
+        android:id="@+id/webView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/webView1"
+        app:layout_constraintStart_toEndOf="@id/image4"
+        android:layout_margin="4dp" />
+
+    <WebView
+        android:id="@+id/webView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/webView2"
+        app:layout_constraintStart_toEndOf="@id/webView3"
+        android:layout_margin="4dp" />
+
+    <WebView
+        android:id="@+id/webView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/webView3"
+        app:layout_constraintStart_toEndOf="@id/image6"
+        android:layout_margin="4dp" />
+
+    <WebView
+        android:id="@+id/webView6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@id/webView4"
+        app:layout_constraintStart_toEndOf="@id/webView5"
+        android:layout_margin="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
